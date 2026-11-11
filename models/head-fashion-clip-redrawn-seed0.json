@@ -1,0 +1,28 @@
+{
+  "settings": {
+    "MODEL": "fashion-clip",
+    "CROPS": "redrawn",
+    "CLOSET": "plus-train",
+    "VIEWS": 4,
+    "HIDDEN": 128,
+    "DROPOUT": 0.1,
+    "TEMPERATURE": 0.05,
+    "LEARNING_RATE": 0.001,
+    "WEIGHT_DECAY": 0.01,
+    "EPOCHS": 300,
+    "PATIENCE": 30,
+    "SEED": 0
+  },
+  "best_epoch": 58,
+  "validation_mrr": 0.8351851851851851,
+  "test_untrained": {
+    "recall@1": 0.5166666666666667,
+    "recall@3": 0.6333333333333333,
+    "mrr": 0.603477538543328
+  },
+  "test_trained": {
+    "recall@1": 0.5916666666666668,
+    "recall@3": 0.7833333333333333,
+    "mrr": 0.6816807844932844
+  }
+}

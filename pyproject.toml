@@ -1,0 +1,17 @@
+[project]
+name = "styleio-server"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    # Same versions as Style.io_ML, so the server turns images into exactly the numbers training saw (rule 1).
+    "torch==2.15.0",
+    "transformers==5.22.2",
+    "pillow",
+    "numpy",
+    "fastapi",
+    "uvicorn[standard]",
+    "python-multipart",
+]
+
+[dependency-groups]
+dev = ["httpx"]
